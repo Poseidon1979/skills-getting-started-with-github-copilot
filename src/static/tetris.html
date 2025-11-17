@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris Game - Mergington High School</title>
+    <link rel="stylesheet" href="tetris.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mergington High School</h1>
+      <h2>Tetris Game</h2>
+      <nav>
+        <a href="index.html">Back to Activities</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="game-container">
+        <div class="game-info">
+          <div class="info-section">
+            <h3>Score</h3>
+            <div id="score">0</div>
+          </div>
+          <div class="info-section">
+            <h3>Level</h3>
+            <div id="level">1</div>
+          </div>
+          <div class="info-section">
+            <h3>Lines</h3>
+            <div id="lines">0</div>
+          </div>
+        </div>
+
+        <div class="game-area">
+          <canvas id="game-canvas" width="300" height="600"></canvas>
+          <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
+          </div>
+        </div>
+
+        <div class="game-controls">
+          <div class="info-section">
+            <h3>Next Piece</h3>
+            <canvas id="next-canvas" width="120" height="120"></canvas>
+          </div>
+          <div class="info-section">
+            <h3>Controls</h3>
+            <ul>
+              <li><strong>←/→</strong> Move</li>
+              <li><strong>↓</strong> Soft Drop</li>
+              <li><strong>↑/Space</strong> Rotate</li>
+              <li><strong>P</strong> Pause</li>
+            </ul>
+          </div>
+          <div class="button-group">
+            <button id="start-btn">Start Game</button>
+            <button id="pause-btn">Pause</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Mergington High School</p>
+    </footer>
+
+    <script src="tetris.js"></script>
+  </body>
+</html>
